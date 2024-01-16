@@ -1,6 +1,6 @@
 substitutions:
-  name: "project-template"
-  friendly_name: "Project Template"
+  name: "aaa-template"
+  friendly_name: "aaa Template"
 
 esphome:
   name: "${name}"
