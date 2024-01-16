@@ -25,6 +25,19 @@ ota:
 wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
+  
+uart:
+  rx_pin: GPIO2
+  tx_pin: GPIO0
+  baud_rate: 9600
 
+sensor:
+  - platform: senseair
+    id: senseair_s8
+    co2:
+      name: "SenseAir CO2 Value"
+    update_interval: 60s
+
+    
 captive_portal:
 
