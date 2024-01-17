@@ -8,7 +8,7 @@ esphome:
   name_add_mac_suffix: true 
   project:
     name: esphome.tuyamini-template
-    version: "1.0"
+    version: "1.1"
 
 bk72xx:
   board: generic-bk7231n-qfn32-tuya
