@@ -1,6 +1,4 @@
-
-
-  substitutions:
+substitutions:
   name: "tuya-mini-switch"
   friendly_name: "Tuya Mini Switch"
 
