@@ -33,7 +33,7 @@ ota:
 
 # This should point to the public location of this yaml file.
 dashboard_import:
-  package_import_url: github://witchrobin/esphome/project-template.yaml@main
+  package_import_url: github://witchrobin/esphome/project-template.yaml
   import_full_config: false # or true
 
 wifi:
