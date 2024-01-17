@@ -24,7 +24,7 @@ bk72xx:
 logger:
 
 web_server:
-mdns:
+#mdns:
 # API is a requirement of the dashboard import.
 api:
 
