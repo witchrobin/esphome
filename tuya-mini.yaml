@@ -1,7 +1,7 @@
 substitutions:
   device_name: "tuya-mini"
   project_name: "Tuya.Mini Module"
-  project_version: "1.0"
+  project_version: "1.1"
  
 esphome:
   name: "${device_name}"
