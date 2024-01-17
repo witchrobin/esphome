@@ -1,0 +1,76 @@
+substitutions:
+  device_name: "tuya-mini"
+  project_name: "Tuya.Mini Module"
+  project_version: "1.0"
+ 
+esphome:
+  name: "${device_name}"
+  friendly_name: "Tuya Mini Switch"
+  name_add_mac_suffix: true
+  project:
+    name: "${project_name}"
+    version: "${project_version}"
+
+bk72xx:
+  board: generic-bk7231n-qfn32-tuya
+
+api:
+
+ota:
+
+logger:
+
+mdns:
+  disabled: false
+
+web_server:
+
+wifi:
+  ap: 
+
+captive_portal:
+
+dashboard_import:
+  package_import_url: github://witchrobin/esphome/tuya-mini.yaml
+
+text_sensor:
+  - platform: libretiny
+    version:
+      name: LibreTiny Version
+
+binary_sensor:
+  - platform: gpio
+    id: binary_onoff_1
+    pin:
+      number: P26
+      inverted: true
+      mode: INPUT_PULLUP
+    on_state:
+      then:
+        - switch.toggle: switch_1
+  - platform: gpio
+    id: binary_switch_all
+    pin:
+      number: P11
+      inverted: true
+      mode: INPUT_PULLUP
+    on_press:
+      then:
+        - switch.toggle: switch_1
+
+switch:
+  - platform: gpio
+    id: switch_1
+    name: Relay 1
+    pin: P8
+
+status_led:
+  pin:
+    number: P7
+    inverted: true
+
+button:
+  - platform: factory_reset
+    name: Reset to Factory Settings
+  - platform: restart
+    name: Restart
