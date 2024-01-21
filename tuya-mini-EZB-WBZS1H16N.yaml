@@ -31,7 +31,7 @@ wifi:
 captive_portal:
 
 dashboard_import:
-  package_import_url: github://witchrobin/esphome/tuya-mini.yaml
+  package_import_url: github://witchrobin/esphome/tuya-mini-EZB-WBZS1H16N.yaml
 
 text_sensor:
   - platform: libretiny
