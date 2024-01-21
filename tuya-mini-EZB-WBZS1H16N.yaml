@@ -42,7 +42,7 @@ binary_sensor:
   - platform: gpio
     id: binary_onoff_1
     pin:
-      number: P26
+      number: P14
       inverted: true
       mode: INPUT_PULLUP
     on_state:
@@ -51,7 +51,7 @@ binary_sensor:
   - platform: gpio
     id: binary_switch_all
     pin:
-      number: P11
+      number: P8
       inverted: true
       mode: INPUT_PULLUP
     on_press:
@@ -62,11 +62,11 @@ switch:
   - platform: gpio
     id: switch_1
     name: Relay 1
-    pin: P8
+    pin: P15
 
 status_led:
   pin:
-    number: P7
+    number: P6
     inverted: true
 
 button:
